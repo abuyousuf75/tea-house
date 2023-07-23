@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tea House</title>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@3.3.1/dist/full.css" rel="stylesheet" type="text/css" />
+    <!-- font awsome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <!-- Goggle fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;700;800&display=swap" rel="stylesheet">
 
@@ -21,7 +23,7 @@
             extend: {
               colors: {
                 clifford: '#da373d',
-                buttonpmry:'#linear-gradient(270deg, #F00 0%, #FF8938 100%)',
+                clr: '#1C1C1C',
               }
             }
           }
@@ -31,21 +33,84 @@
 </head>
 <body>
     <!-- Header Section Start  -->
-    <hader id="header">
-        <div class="hero ">
-            <div class="hero-content flex-col lg:flex-row-reverse relative">
-              <img src="./images/banner.png" class=" " />
-              <div class="base absolute  right-72 bottom-20 w-48 h-16 shadow-[#fff] rounded bg-white">
-
-              </div>
-              <div>
-                <h1 class="text-7xl font-bold">It's good 
-                    tea time at The Tea House</h1>
-                <p class="py-4">Tea and Botanical Solutions Supplier Give Optimum Satisfaction To Your Taste Buds.</p>
-                <button class="btn bg-gradient-to-r from-orange-400 to-red-700 text-white capitalize ">Explore More</button>
-              </div>
+  <hader id="header" class="container m-auto">
+    <div class="hero pt-7 ">
+      <div class="hero-content flex-col lg:flex-row">
+        <div>
+          <h1 class="text-7xl font-extrabold">It's good</h1> 
+          <h1 class="text-7xl font-extrabold"> tea time at</h1> 
+          <h1 class="text-7xl font-extrabold">The Tea House</h1> 
+          <p class="py-6">Tea and Botanical Solutions Supplier Give Optimum Satisfaction To Your Taste Buds.</p>
+          <button class="btn">Explore More</button>
+        </div>
+        <div>
+          <img src="./images/banner.png" class="max-w-sm" />
+          <!-- Ratings badge -->
+          <div class=" -mt-16 flex items-center gap-4 drop-shadow-lg bg-white p-5 w-60">
+            <i class="fa-solid fa-star text-3xl text-amber-400"></i>
+            <div class="">
+              <h3 class="text-3xl text-amber-400">5.00</h3>
+              <p>Trust Pilot Ratings </p>
             </div>
           </div>
-    </hader>
+        </div>
+      </div>
+    </div>
+  </hader>
+   <!-- featured Section Start  -->
+   <section class="container m-auto  my-24">
+    <div class="heading text-center">
+      <h1 class="text-5xl font-extrabold mb-5">Our Featured Products</h1>
+      <p class="lg:max-w-3xl mx-auto mb-10">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. </p>
+    </div>
+    <!-- card container -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+      <!-- first card -->
+      <div class="card  p-8 bg-gradient-to-r from-[#f4f4f4] to-[#f4f4f4] shadow-xl">
+        <figure class="px-10 pt-10">
+          <img src="./images/tea-1.png" alt="tea1" class="rounded-xl" />
+        </figure>
+        <div class="card-body items-center text-center">
+          <h2 class="card-title text-2xl font-bold">Milk Tea</h2>
+          <p>Creamer could be replaced by fresh milk</p>
+          <div class="card-actions">
+          </div>
+        </div>
+      </div>
+      <div class="card  p-8 bg-gradient-to-r from-[#f4f4f4] to-[#f4f4f4] shadow-xl">
+        <figure class="px-10 pt-10">
+          <img src="./images/tea-2.png" alt="tea2" class="rounded-xl" />
+        </figure>
+        <div class="card-body items-center text-center">
+          <h2 class="card-title text-2xl font-bold">Black Tea</h2>
+          <p>Creamer could be replaced by fresh milk</p>
+          <div class="card-actions">
+          </div>
+        </div>
+      </div>
+      <div class="card  p-8 bg-gradient-to-r from-[#f4f4f4] to-[#f4f4f4] shadow-xl">
+        <figure class="px-10 pt-10">
+          <img src="./images/tea-3.png" alt="tea3" class="rounded-xl" />
+        </figure>
+        <div class="card-body items-center text-center">
+          <h2 class="card-title text-2xl font-bold">Lemon Tea</h2>
+          <p>Creamer could be replaced by fresh milk</p>
+          <div class="card-actions">
+          </div>
+        </div>
+      </div>
+      <div class="card  p-8 bg-gradient-to-r from-[#f4f4f4] to-[#f4f4f4] shadow-xl">
+        <figure class="px-10 pt-10">
+          <img src="./images/tea-4.png" alt="tea4" class="rounded-xl" />
+        </figure>
+        <div class="card-body items-center text-center">
+          <h2 class="card-title text-2xl font-bold">Green Tea</h2>
+          <p>Creamer could be replaced by fresh milk</p>
+          <div class="card-actions">
+          </div>
+        </div>
+      </div>
+    </div>
+   </section>
 </body>
 </html>
