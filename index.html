@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tea House</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.3.1/dist/full.css" rel="stylesheet" type="text/css" />
+    <!-- Goggle fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;700;800&display=swap" rel="stylesheet">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        *{
+            font-family: 'Manrope', sans-serif;
+        }
+    </style>
+    <!-- Custom Talwind css -->
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+                buttonpmry:'#linear-gradient(270deg, #F00 0%, #FF8938 100%)',
+              }
+            }
+          }
+        }
+      </script>
+    
+</head>
+<body>
+    <!-- Header Section Start  -->
+    <hader id="header">
+        <div class="hero ">
+            <div class="hero-content flex-col lg:flex-row-reverse relative">
+              <img src="./images/banner.png" class=" " />
+              <div class="base absolute  right-72 bottom-20 w-48 h-16 shadow-[#fff] rounded bg-white">
+
+              </div>
+              <div>
+                <h1 class="text-7xl font-bold">It's good 
+                    tea time at The Tea House</h1>
+                <p class="py-4">Tea and Botanical Solutions Supplier Give Optimum Satisfaction To Your Taste Buds.</p>
+                <button class="btn bg-gradient-to-r from-orange-400 to-red-700 text-white capitalize ">Explore More</button>
+              </div>
+            </div>
+          </div>
+    </hader>
+</body>
+</html>
