@@ -15,6 +15,9 @@
         *{
             font-family: 'Manrope', sans-serif;
         }
+        .container{
+          max-width: 1280px!important;
+        }
     </style>
     <!-- Custom Talwind css -->
     <script>
@@ -33,10 +36,10 @@
 </head>
 <body>
     <!-- Header Section Start  -->
-  <hader id="header" class="container m-auto">
-    <div class="hero pt-7 ">
-      <div class="hero-content flex-col lg:flex-row">
-        <div>
+  <hader id="header" class="container mx-auto">
+    <div class=" pt-7 ">
+      <div class="justify-center items-center flex flex-col lg:flex-row">
+        <div class="">
           <h1 class="text-7xl font-extrabold">It's good</h1> 
           <h1 class="text-7xl font-extrabold"> tea time at</h1> 
           <h1 class="text-7xl font-extrabold">The Tea House</h1> 
@@ -44,7 +47,7 @@
           <button class="btn">Explore More</button>
         </div>
         <div>
-          <img src="./images/banner.png" class="max-w-sm" />
+          <img src="./images/banner.png" class="" />
           <!-- Ratings badge -->
           <div class=" -mt-16 flex items-center gap-4 drop-shadow-lg bg-white p-5 w-60">
             <i class="fa-solid fa-star text-3xl text-amber-400"></i>
@@ -57,10 +60,11 @@
       </div>
     </div>
   </hader>
-   <!-- featured Section Start  -->
-   <section class="container m-auto  my-24">
+  <main class="container mx-auto">
+     <!-- featured Section Start  -->
+   <section class="my-24">
     <div class="heading text-center">
-      <h1 class="text-5xl font-extrabold mb-5">Our Featured Products</h1>
+      <h1 class="text-5xl font-extrabold mb-5 ">Our Featured Products</h1>
       <p class="lg:max-w-3xl mx-auto mb-10">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. </p>
     </div>
     <!-- card container -->
@@ -112,5 +116,29 @@
       </div>
     </div>
    </section>
+   <!-- Tea Section start below -->
+   <section class="container mx-auto my-12 flex flex-col lg:flex-row gap-12">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 flex-1">
+          <div class="bg-gradient-to-r from-red-600 to-amber-500 rounded-xl h-36 opacity-10"></div>
+          <div class="row-span-2 bg-[#E6A6231A] rounded-lg flex justify-center py-5 px-5 items-center">
+            <img src="./images/fresh-1.png" alt="f1">
+          </div>
+          <div class="row-span-2 bg-[#5776391A] rounded-lg flex justify-center py-5 px-5 items-center">
+            <img src="./images/fresh-2.png" alt="f2">
+          </div>
+          <div class="bg-gradient-to-r from-[#d9d9d9] to-[#ffffff] rounded-xl h-36 "></div>
+        </div>
+        <div class="space-y-5 flex-1">
+          <h3 class="text-5xl font-extrabold">Great Tea, Freshly 
+            <br>
+            Presented</h3>
+            <p>The meaning of gong cha is chanese is to provide the best tea to emperor from all possessions . It represents the highest quality and self expectation. Establishing in 2006, Gong cha had been deeply appreciated by its custoers  because of good words of mouth and unique customized service orginated from Taiwan.</p>
+            <h4 class="text-xl font-extrabold mt-8">Unique Taste</h4>
+            <p>A Unique and different style from other teapots gives a luxurious and minimalist impression</p>
+            <h4 class="text-xl font-extrabold">Premium Quality</h4>
+            <p>A Unique and different style from other teapots gives a luxurious and minimalist impression</p>
+        </div>
+   </section>
+  </main>
 </body>
 </html>
